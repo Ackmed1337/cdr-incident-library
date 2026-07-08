@@ -1,5 +1,7 @@
 # CDR / Open Banking Incident & Error Reference Library
 
+Created by Ahmad ElSayed.
+
 Live site: https://ackmed1337.github.io/cdr-incident-library/
 
 A single-page reference tool for Consumer Data Right (CDR) / Open Banking work:

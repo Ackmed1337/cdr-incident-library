@@ -378,7 +378,10 @@
       <h1>&#9679; CDR Incident &amp; Error Reference Library</h1>
       <div class="subtitle">Open Banking / CDS root-cause reference &mdash; team incident log + full error &amp; versioning catalogue, sourced from the <a href="https://consumerdatastandardsaustralia.github.io/standards/" target="_blank" rel="noopener">Consumer Data Standards</a></div>
     </div>
-    <div class="stat"><b id="count">0</b> incidents logged</div>
+    <div class="stat">
+      <div><b id="count">0</b> incidents logged</div>
+      <div style="margin-top:4px;">Created by Ahmad ElSayed</div>
+    </div>
   </header>
 
   <div class="freshness-bar" id="freshnessBar">
@@ -642,7 +645,7 @@ function timeAgo(ts) {
   return days + ' days ago';
 }
 
-// Parses the structured body we generate in openSubmitIssue() back into fields.
+// Parses the structured issue body built in the "Submit via GitHub" click handler below back into fields.
 function parseIncidentIssue(issue) {
   const body = issue.body || '';
   const get = re => { const m = body.match(re); return m ? m[1].trim() : ''; };
